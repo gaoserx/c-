@@ -1,42 +1,42 @@
-//#define _CRT_SECURE_NO_WARNINGS 1
-//
-//#include <stdio.h>
-//
-////²éÕÒÕûÊıÊı×é×î´ó¡¢×îĞ¡Öµ
-//
-////ÕÒ³ö×î´óÖµ
-//int Max(int arr[], int sz)
-//{
-//	int max = arr[0];
-//	for (int i = 1; i < sz; i++)
-//	{
-//
-//		if (max <= arr[i]) 
-//		{
-//			max = arr[i];
-//		}
-//	}
-//	return max;
-//}
-////ÕÒ³ö×îĞ¡Öµ
-//int Min(int arr[], int sz)
-//{
-//	int min = arr[0];
-//	for (int i = 1; i < sz; i++)
-//	{
-//
-//		if (min >= arr[i]) {
-//			min = arr[i];
-//		}
-//	}
-//	return min;
-//}
-//
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+//æŸ¥æ‰¾æ•´æ•°æ•°ç»„æœ€å¤§ã€æœ€å°å€¼
+
+//æ‰¾å‡ºæœ€å¤§å€¼
+int Max(int arr[], int sz)
+{
+	int max = arr[0];
+	for (int i = 1; i < sz; i++)
+	{
+
+		if (max <= arr[i]) 
+		{
+			max = arr[i];
+		}
+	}
+	return max;
+}
+//æ‰¾å‡ºæœ€å°å€¼
+int Min(int arr[], int sz)
+{
+	int min = arr[0];
+	for (int i = 1; i < sz; i++)
+	{
+
+		if (min >= arr[i]) {
+			min = arr[i];
+		}
+	}
+	return min;
+}
+
 //
 //int main()
 //{
 //	int arr[] = {23,24,56,12,23,43,532,23,43,12,67};
 //	int sz = sizeof(arr) / sizeof(arr[0]);
-//	printf("×î´óÖµ£º%d£¬×îĞ¡Öµ£º%d", Max(arr, sz), Min(arr, sz));
+//	printf("æœ€å¤§å€¼ï¼š%dï¼Œæœ€å°å€¼ï¼š%d", Max(arr, sz), Min(arr, sz));
 //	return 0;
 //}
